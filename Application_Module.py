@@ -17,20 +17,21 @@ class Application(WirelessNetwork):
     listSensors = []
     
     def createSensors():
+    
         numOfSensors = int(input('Enter the number of sensors: '))  #Takes the integer input for the Number of sensors
+           
         #index = 0
-        for WirelessNetwork.id in range(numOfSensors):     # For loop to ask sensor ID from the previous input of how many sensors there are 
-            WirelessNetwork.id = str(input("Enter the Sensor ID: ")) 
-            Application.listSensors.append (WirelessNetwork.id)
-            #index += 1 
-            for numOfNeighbours in (WirelessNetwork.id): #For loop to ask for Number of Neighbours for each sesnor ID / Number of sensors that was inputed
+        for sensorID in range(numOfSensors):     # For loop to ask sensor ID from the previous input of how many sensors there are 
+            sensorID = str(input("Enter the Sensor ID: ")) 
+            Application.listSensors.append (sensorID)
+            for numOfNeighbours in (sensorID): #For loop to ask for Number of Neighbours for each sesnor ID / Number of sensors that was inputed
                 numOfNeighbours = int(input('Enter the number of neighbours: '))
                 
             
                 for neighbourName in range (numOfNeighbours): #for loop to asks the name of each link / Neighbour sensor for how many neighbours that were inputed
-                    neighbourName = str(input("Enter the Neighbour ID: "))
-                    distance = int(input('Enter the Distance to '+(WirelessNetwork.id)+': '))
-                    WirelessNetwork.link.append(neighbourName)
+                    WirelessNetwork.id = str(input("Enter the Neighbour ID: "))
+                    distance = int(input('Enter the Distance to '+(sensorID)+': '))
+                    WirelessNetwork.link.append(WirelessNetwork.id)
                     WirelessNetwork.link.append(distance)
                     #for WirelessNetwork.link in (WirelessNetwork.id):
                         
