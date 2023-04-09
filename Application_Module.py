@@ -13,6 +13,7 @@ from Wireless_Networks_Module import WirelessNetwork
 WireNet = WirelessNetwork
 #-------------------------------------------------
 class Application(WirelessNetwork):
+    #Attributes
     listSensors = []
     
     def createSensors():
@@ -28,7 +29,8 @@ class Application(WirelessNetwork):
             
                 for neighbourName in range (numOfNeighbours): #for loop to asks the name of each link / Neighbour sensor for how many neighbours that were inputed
                     neighbourName = str(input("Enter the Neighbour ID: "))
-                    distance = int(input('Enter the Distance to: '))
+                    distance = int(input('Enter the Distance to '+(WirelessNetwork.id)+': '))
+                    
                     WirelessNetwork.link.append(neighbourName)
                     WirelessNetwork.link.append(distance)
             Application.listSensors.append(WirelessNetwork.link)        
