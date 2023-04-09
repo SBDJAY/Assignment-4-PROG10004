@@ -30,20 +30,27 @@ class Application(WirelessNetwork):
                 for neighbourName in range (numOfNeighbours): #for loop to asks the name of each link / Neighbour sensor for how many neighbours that were inputed
                     neighbourName = str(input("Enter the Neighbour ID: "))
                     distance = int(input('Enter the Distance to '+(WirelessNetwork.id)+': '))
-                    
                     WirelessNetwork.link.append(neighbourName)
                     WirelessNetwork.link.append(distance)
-            Application.listSensors.append(WirelessNetwork.link)        
+                    for WirelessNetwork.link in (WirelessNetwork.id):
+                        Application.listSensors.append(WirelessNetwork.link)
+            #Asks user the Oxygen Level and Temperature fro the Sensor after other loops are completed
+            WirelessNetwork.oxygenLevel = int(input('Enter the Oxygen level in %: '))
+            WirelessNetwork.temperature = float(input('Enter the temperature measurement: '))
+
+                    #Application.listSensors.append(WirelessNetwork.link)        
 
         
         print(Application.listSensors)
-
+        print(WirelessNetwork.link)
+    
     def findPath(self, graph, _start, end, path=[]):
         self.graph = graph
         self._start = _start
         self.end = end
         self.path = path
         pass
+    
     def findMaxReading(self, first, second):
         self.first = first
         self.second = second

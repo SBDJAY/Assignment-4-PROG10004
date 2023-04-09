@@ -21,7 +21,9 @@ class WirelessNetwork():
     def greetMessage():      
         #This Definiition prints out a welcome message and is only called once, contains constants BRAND_NAME and ADHOC_MODE
         print('******************************************************************************')
+        time.sleep(1)
         print("Welcome to the company's IoT-Based Health System")
-        time.sleep(3)
+        time.sleep(1)
         print('These are sensors of brand',WirelessNetwork.BRAND_NAME,'and their Ad Hoc Mode is',WirelessNetwork.ADHOC_Mode)
+        time.sleep(1)
         print('******************************************************************************') 
