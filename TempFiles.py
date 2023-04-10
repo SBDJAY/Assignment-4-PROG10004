@@ -35,34 +35,34 @@
 #     sublist=[]
 # print (list1)
 
-class Application(WirelessNetwork):
-    #Attributes
-    listSensors = []
+# class Application(WirelessNetwork):
+#     #Attributes
+#     listSensors = []
     
-    def createSensors():
-        numOfSensors = int(input('Enter the number of sensors: '))  #Takes the integer input for the Number of sensors
-        #index = 0
-        for WirelessNetwork.id in range(numOfSensors):     # For loop to ask sensor ID from the previous input of how many sensors there are 
-            WirelessNetwork.id = str(input("Enter the Sensor ID: ")) 
-            Application.listSensors.append (WirelessNetwork.id)
-            #index += 1 
-            for numOfNeighbours in (WirelessNetwork.id): #For loop to ask for Number of Neighbours for each sesnor ID / Number of sensors that was inputed
-                numOfNeighbours = int(input('Enter the number of neighbours: '))
+#     def createSensors():
+#         numOfSensors = int(input('Enter the number of sensors: '))  #Takes the integer input for the Number of sensors
+#         #index = 0
+#         for WirelessNetwork.id in range(numOfSensors):     # For loop to ask sensor ID from the previous input of how many sensors there are 
+#             WirelessNetwork.id = str(input("Enter the Sensor ID: ")) 
+#             Application.listSensors.append (WirelessNetwork.id)
+#             #index += 1 
+#             for numOfNeighbours in (WirelessNetwork.id): #For loop to ask for Number of Neighbours for each sesnor ID / Number of sensors that was inputed
+#                 numOfNeighbours = int(input('Enter the number of neighbours: '))
                 
             
-                for neighbourName in range (numOfNeighbours): #for loop to asks the name of each link / Neighbour sensor for how many neighbours that were inputed
-                    neighbourName = str(input("Enter the Neighbour ID: "))
-                    distance = int(input('Enter the Distance to '+(WirelessNetwork.id)+': '))
-                    WirelessNetwork.link.append(neighbourName)
-                    WirelessNetwork.link.append(distance)
-                    #for WirelessNetwork.link in (WirelessNetwork.id):
+#                 for neighbourName in range (numOfNeighbours): #for loop to asks the name of each link / Neighbour sensor for how many neighbours that were inputed
+#                     neighbourName = str(input("Enter the Neighbour ID: "))
+#                     distance = int(input('Enter the Distance to '+(WirelessNetwork.id)+': '))
+#                     WirelessNetwork.link.append(neighbourName)
+#                     WirelessNetwork.link.append(distance)
+#                     #for WirelessNetwork.link in (WirelessNetwork.id):
                         
-            #Asks user the Oxygen Level and Temperature fro the Sensor after other loops are completed
-            WirelessNetwork.oxygenLevel = int(input('Enter the Oxygen level in %: '))
-            WirelessNetwork.temperature = float(input('Enter the temperature measurement: '))
+#             #Asks user the Oxygen Level and Temperature fro the Sensor after other loops are completed
+#             WirelessNetwork.oxygenLevel = int(input('Enter the Oxygen level in %: '))
+#             WirelessNetwork.temperature = float(input('Enter the temperature measurement: '))
 
-            Application.listSensors.append(WirelessNetwork.link)        
+#             Application.listSensors.append(WirelessNetwork.link)        
 
         
-        #print(Application.listSensors)
-        print(WirelessNetwork.link)
+#         #print(Application.listSensors)
+#         print(WirelessNetwork.link)
