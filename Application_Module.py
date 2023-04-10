@@ -28,7 +28,7 @@ class Application(WirelessNetwork):
                 numOfNeighbours = int(input('Enter the number of neighbours: '))
                 
             
-                for neighbourName in range (numOfNeighbours): #for loop to asks the name of each link / Neighbour sensor for how many neighbours that were inputed
+                for WirelessNetwork.id in range (numOfNeighbours): #for loop to asks the name of each link / Neighbour sensor for how many neighbours that were inputed
                     WirelessNetwork.id = str(input("Enter the Neighbour ID: "))
                     distance = int(input('Enter the Distance to '+(sensorID)+': '))
                     WirelessNetwork.link.append(WirelessNetwork.id)
@@ -42,7 +42,7 @@ class Application(WirelessNetwork):
             Application.listSensors.append(WirelessNetwork.link)        
 
         
-        #print(Application.listSensors)
+        print(Application.listSensors)
         print(WirelessNetwork.link)
     
     def findPath(self, graph, _start, end, path=[]):
